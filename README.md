@@ -14,7 +14,8 @@ docker build frontend/ -t zaglodin/13.1-frontend:stage
 docker push zaglodin/13.1-backend:stage
 docker push zaglodin/13.1-frontend:stage
 ```
-
+sudo kubectl apply -f stage-fromt-back.yaml
+sudo kubectl apply -f stage-db.yaml
 
 ## Задание 2: подготовить конфиг для production окружения
 Следующим шагом будет запуск приложения в production окружении. Требования сложнее:
