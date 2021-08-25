@@ -72,3 +72,14 @@ spec:
       protocol: TCP
   selector:
     app: stage-front-back
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stage-front-back
+  namespace: stage
+data:
+  backend.env: |-
+    DATABASE_URL=postgres://postgres:postgres@task1-db.stage:5432/news
+  frontend.env: |-
+    BASE_URL=http://localhost:9000
