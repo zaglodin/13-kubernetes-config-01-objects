@@ -46,13 +46,13 @@ spec:
       volumes:
       - name: backend-env
         configMap:
-          name: stage-config
+          name: stage-front-back
           items:
             - key: backend.env
               path: .env
       - name: frontend-env
         configMap:
-          name: stage-config
+          name: stage-front-back
           items:
             - key: frontend.env
               path: .env
